@@ -1,5 +1,10 @@
-# unit3d-api-to-rss-proxy-wrapper
-A "proxy wrapper" around UNIT3D's API to generate RSS feeds on-the-fly
+# API to RSS for UNIT3D-based Torrent Trackers
+
+A `quick'n'dirty` "proxy wrapper" around UNIT3D's API to (locally) generate RSS feeds for various needed search terms *on-the-fly*. No more akwardly setting up tons of RSS feeds in your UNIT3D-based tracker's user account.
+
+This is purely a personal helper, so code is a bit messy (but which PHP code isn't?). Shared here in case someone else wants to have a go at it, or grab some ideas, or something like that. Anyway… it works for me™ and my needs and that's all that is important. 😇 
+
+Yay, **happy turtles!**
 
 ## Requirements
 
