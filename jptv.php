@@ -206,14 +206,14 @@ if (array_key_exists('keyword', $_GET) && !empty($keyword = strval($_GET['keywor
 				foreach($r['data'] as $t)
 				{
 					if (array_key_exists('type',         $t) && ($t['type'] == 'torrent') &&
-						array_key_exists('id',           $t) &&
-						array_key_exists('attributes',   $t) && is_array(($a = $t['attributes'])) &&
-						/* We need at least this 3 attributes to generate anything remotely useful below
-						 */
-						array_key_exists('name',         $a) &&
-						array_key_exists('created_at',   $a) &&
-						array_key_exists('details_link', $a)
-						)
+					    array_key_exists('id',           $t) &&
+					    array_key_exists('attributes',   $t) && is_array(($a = $t['attributes'])) &&
+					    /* We need at least this 3 attributes to generate anything remotely useful below
+					     */
+					    array_key_exists('name',         $a) &&
+					    array_key_exists('created_at',   $a) &&
+					    array_key_exists('details_link', $a)
+					    )
 					{
 						if (TEST_MODE)
 						{
@@ -324,11 +324,11 @@ if (array_key_exists('keyword', $_GET) && !empty($keyword = strval($_GET['keywor
 					header('Content-Type: application/rss+xml; charset=utf-8');
 
 					echo $xmldoc->asXML();
-					exit();
-
-					/* And we're done. Happy feed syncing!
-					 */
 				}
+				
+				/* And we're done. Happy feed syncing!
+				 */
+				exit();
 			}
 			else
 			{
