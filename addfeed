@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ]; then
+	echo "addfeed: missing keyword or excess arguments."
+	echo "Usage: addfeed keyword"
+	echo
+	exit 2
+fi
+
+# Note: 'Open' converts our (Japanese) search term into a proper percent encoded presentation, so it actually
+#       works with the various RSS applications on the Mac (at least Vienna and Reeder have trouble with
+#       non-percent-encoded variants of the URLs)
+exec open -a Vienna "http://localhost/jptv.php?keyword=${1}"
