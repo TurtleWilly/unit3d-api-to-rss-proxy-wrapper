@@ -18,7 +18,7 @@ $ curl 'http://localhost/jptv.php?keyword=怪物'
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" lang="en">
 <channel>
-	<title>jptv.club: パン旅。</title>
+	<title>jptv.club: 怪物</title>
 	<description>Results for &lt;怪物&gt; fetched via jptv.club's API.</description>
 	<language>en</language>
 	<lastBuildDate>Wed, 15 Jun 2022 20:41:51 +0200</lastBuildDate>
