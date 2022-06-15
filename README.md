@@ -7,9 +7,9 @@ A "proxy wrapper" around UNIT3D's API to generate RSS feeds on-the-fly
 
 ## Installation
 
-* copy 'jptv.php' and a 'jptv-config.php' to a directory in the document root of your (preferably locally running) webserver
-* (optionally?) create 'log' and 'cache' directories in the same location as the scripts. The cache directory must be writeable by the webserver user. Inside the log directory only the logfile needs write access, if required.
-* addjust jptv-config.php with your API_TOKEN (and the TRACKER_BASE, if it's not jptv.club)
+* copy `jptv.php` and a `jptv-config.php` to a directory in the document root of your (preferably locally running) webserver
+* (optionally?) create `log` and `cache` directories in the same location as the scripts. The `cache` directory must be readable and writeable by the webserver user. Inside the `log` directory only the logfile itself needs write access, if required.
+* adjust jptv-config.php with your API_TOKEN (and the TRACKER_BASE, if it's not jptv.club)
 
 If everything works then a quick cURL call should dump an RSS feed, something like:
 
