@@ -13,7 +13,7 @@
 /*  TODO:
  *   - Add Seeder/Leecher/Completed stats
  *   - Cache: Adjust some output to reflect "cached" status?
- *	 - Add test/protection/warn against reverse order results for older UNIT3D versions?
+ *   - Add test/protection/warn against reverse order results for older UNIT3D versions?
  *   - Add support for generating feeds by 'uploader' rather than name search
  */
 
@@ -22,7 +22,7 @@ define('TEST_MODE', FALSE); /* for "visual testing" via HTML output in a web bro
 
 /*   Errors
  */
-ini_set('error_log',	  dirname(__FILE__).'/log/jptv-rss.log');
+ini_set('error_log',      dirname(__FILE__).'/log/jptv-rss.log');
 ini_set('log_errors',     '1');
 ini_set('display_errors', '0');
 error_reporting(E_ALL|E_STRICT);
@@ -67,7 +67,7 @@ function selfurl()
 class SimpleXMLElementSafe extends SimpleXMLElement
 {
 	/*  Yikes, BS…
-	 *  	https://stackoverflow.com/questions/552957
+	 *      https://stackoverflow.com/questions/552957
 	 */
 	function addChild($name, $value = null, $ns = null)
 	{
@@ -130,7 +130,7 @@ if (array_key_exists('keyword', $_GET) && !empty($keyword = strval($_GET['keywor
 		'api_token' => API_TOKEN,
 		/* Actual search query parameters
 		 */
-	    'name'      => $keyword_norm,
+		'name'      => $keyword_norm,
 		'sorting'   => 'created_at',
 		'direction' => 'desc', /* alternatively: 'asc' */
 		'qty'       => file_exists($cachefile) ? 25 : 100,  /* try to grab more for inital sync */
